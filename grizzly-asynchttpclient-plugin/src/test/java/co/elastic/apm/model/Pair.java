@@ -1,4 +1,4 @@
-package co.elastic.apm.agent.httpclient;
+package co.elastic.apm.model;
 
 public class Pair<F, S> {
     private final F first;

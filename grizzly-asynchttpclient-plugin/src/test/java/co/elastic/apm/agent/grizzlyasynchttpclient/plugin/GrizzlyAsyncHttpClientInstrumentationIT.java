@@ -1,14 +1,13 @@
-package co.elastic.apm.agent.httpclient;
+package co.elastic.apm.agent.grizzlyasynchttpclient.plugin;
 
 import co.elastic.apm.base.AbstractInstrumentationTest;
+import co.elastic.apm.model.Pair;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.kananindzya.elastic.apm.example.webserver.ExampleAlreadyInstrumentedHttpServer;
 import com.kananindzya.elastic.apm.example.webserver.ExampleHttpServer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.IOException;
 import java.net.URI;
