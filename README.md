@@ -12,3 +12,19 @@ Links to library below:
 
 ## Installation
 Set the [`plugins_dir`](https://www.elastic.co/guide/en/apm/agent/java/current/config-core.html#config-plugins-dir) agent configuration option and copy the plugin to specified directory.
+
+
+## Additional info
+### Screenshots of span:
+
+#### Transaction info
+![1_transaction.png](images%2F1_transaction.png)
+
+#### Span stacktrace
+![2_span_stacktrace.png](images%2F2_span_stacktrace.png)
+
+#### Span metadata
+![3_span_metadata.png](images%2F3_span_metadata.png)
+
+#### Span json data example
+[span.json](example%2Fspan.json)

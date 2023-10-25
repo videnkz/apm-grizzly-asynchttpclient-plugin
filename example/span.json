@@ -1,0 +1,445 @@
+{
+  "_index": "apm-7.17.13-span-000002",
+  "_type": "_doc",
+  "_id": "zKCnZosBkadrp2bE3NK1",
+  "_version": 1,
+  "_score": 1,
+  "_source": {
+    "parent": {
+      "id": "c1809f3a588df903"
+    },
+    "agent": {
+      "name": "java",
+      "ephemeral_id": "db5457c8-a643-491d-bb1f-9c96e08f2773",
+      "version": "1.43.0"
+    },
+    "destination": {
+      "address": "second-service",
+      "port": 8080
+    },
+    "processor": {
+      "name": "transaction",
+      "event": "span"
+    },
+    "tags": [
+      "_geoip_expired_database"
+    ],
+    "observer": {
+      "hostname": "57bfb6cfd34b",
+      "id": "fcdcf5b3-ae51-4a7a-b3d9-7a1ed340fa95",
+      "ephemeral_id": "63b239c7-1604-4c61-a6ea-16fb84411491",
+      "type": "apm-server",
+      "version": "7.17.13",
+      "version_major": 7
+    },
+    "trace": {
+      "id": "55f58e6f9d44e205bc93fb2ff5733342"
+    },
+    "@timestamp": "2023-10-25T11:45:45.666Z",
+    "ecs": {
+      "version": "1.12.0"
+    },
+    "service": {
+      "environment": "development",
+      "name": "first-service"
+    },
+    "event": {
+      "outcome": "success"
+    },
+    "transaction": {
+      "id": "c1809f3a588df903"
+    },
+    "span": {
+      "duration": {
+        "us": 2281660
+      },
+      "stacktrace": [
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "AhcEventFilter.java",
+          "classname": "com.ning.http.client.providers.grizzly.AhcEventFilter",
+          "line": {
+            "number": 428
+          },
+          "module": "com.ning.http.client.providers.grizzly",
+          "function": "onHttpPacketParsed"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "HttpCodecFilter.java",
+          "classname": "org.glassfish.grizzly.http.HttpCodecFilter",
+          "line": {
+            "number": 1368
+          },
+          "module": "org.glassfish.grizzly.http",
+          "function": "decodeWithTransferEncoding"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "HttpCodecFilter.java",
+          "classname": "org.glassfish.grizzly.http.HttpCodecFilter",
+          "line": {
+            "number": 658
+          },
+          "module": "org.glassfish.grizzly.http",
+          "function": "handleRead"
+        },
+        {
+          "exclude_from_grouping": false,
+          "library_frame": true,
+          "filename": "HttpClientFilter.java",
+          "classname": "org.glassfish.grizzly.http.HttpClientFilter",
+          "line": {
+            "number": 175
+          },
+          "module": "org.glassfish.grizzly.http",
+          "function": "handleRead"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "ExecutorResolver.java",
+          "classname": "org.glassfish.grizzly.filterchain.ExecutorResolver$9",
+          "line": {
+            "number": 119
+          },
+          "module": "org.glassfish.grizzly.filterchain",
+          "function": "execute"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "DefaultFilterChain.java",
+          "classname": "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+          "line": {
+            "number": 284
+          },
+          "module": "org.glassfish.grizzly.filterchain",
+          "function": "executeFilter"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "DefaultFilterChain.java",
+          "classname": "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+          "line": {
+            "number": 201
+          },
+          "module": "org.glassfish.grizzly.filterchain",
+          "function": "executeChainPart"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "DefaultFilterChain.java",
+          "classname": "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+          "line": {
+            "number": 133
+          },
+          "module": "org.glassfish.grizzly.filterchain",
+          "function": "execute"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "DefaultFilterChain.java",
+          "classname": "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+          "line": {
+            "number": 112
+          },
+          "module": "org.glassfish.grizzly.filterchain",
+          "function": "process"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "ProcessorExecutor.java",
+          "classname": "org.glassfish.grizzly.ProcessorExecutor",
+          "line": {
+            "number": 77
+          },
+          "module": "org.glassfish.grizzly",
+          "function": "execute"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "TCPNIOTransport.java",
+          "classname": "org.glassfish.grizzly.nio.transport.TCPNIOTransport",
+          "line": {
+            "number": 539
+          },
+          "module": "org.glassfish.grizzly.nio.transport",
+          "function": "fireIOEvent"
+        },
+        {
+          "exclude_from_grouping": false,
+          "library_frame": true,
+          "filename": "AbstractIOStrategy.java",
+          "classname": "org.glassfish.grizzly.strategies.AbstractIOStrategy",
+          "line": {
+            "number": 112
+          },
+          "module": "org.glassfish.grizzly.strategies",
+          "function": "fireIOEvent"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "WorkerThreadIOStrategy.java",
+          "classname": "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy",
+          "line": {
+            "number": 117
+          },
+          "function": "run0",
+          "module": "org.glassfish.grizzly.strategies"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "WorkerThreadIOStrategy.java",
+          "classname": "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy",
+          "line": {
+            "number": 56
+          },
+          "module": "org.glassfish.grizzly.strategies",
+          "function": "access$100"
+        },
+        {
+          "library_frame": true,
+          "exclude_from_grouping": false,
+          "filename": "WorkerThreadIOStrategy.java",
+          "classname": "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable",
+          "line": {
+            "number": 137
+          },
+          "module": "org.glassfish.grizzly.strategies",
+          "function": "run"
+        }
+      ],
+      "subtype": "http",
+      "name": "GET second-service",
+      "destination": {
+        "service": {
+          "resource": "http"
+        }
+      },
+      "id": "a97eae7cb297f77b",
+      "type": "external"
+    },
+    "timestamp": {
+      "us": 1698234345666543
+    }
+  },
+  "fields": {
+    "span.stacktrace.line.number": [
+      428,
+      1368,
+      658,
+      175,
+      119,
+      284,
+      201,
+      133,
+      112,
+      77,
+      539,
+      112,
+      117,
+      56,
+      137
+    ],
+    "span.name": [
+      "GET second-service"
+    ],
+    "destination.port": [
+      8080
+    ],
+    "transaction.id": [
+      "c1809f3a588df903"
+    ],
+    "trace.id": [
+      "55f58e6f9d44e205bc93fb2ff5733342"
+    ],
+    "span.duration.us": [
+      2281660
+    ],
+    "span.stacktrace.classname": [
+      "com.ning.http.client.providers.grizzly.AhcEventFilter",
+      "org.glassfish.grizzly.http.HttpCodecFilter",
+      "org.glassfish.grizzly.http.HttpCodecFilter",
+      "org.glassfish.grizzly.http.HttpClientFilter",
+      "org.glassfish.grizzly.filterchain.ExecutorResolver$9",
+      "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+      "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+      "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+      "org.glassfish.grizzly.filterchain.DefaultFilterChain",
+      "org.glassfish.grizzly.ProcessorExecutor",
+      "org.glassfish.grizzly.nio.transport.TCPNIOTransport",
+      "org.glassfish.grizzly.strategies.AbstractIOStrategy",
+      "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy",
+      "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy",
+      "org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable"
+    ],
+    "processor.event": [
+      "span"
+    ],
+    "agent.name": [
+      "java"
+    ],
+    "destination.address": [
+      "second-service"
+    ],
+    "event.outcome": [
+      "success"
+    ],
+    "service.environment": [
+      "development"
+    ],
+    "span.stacktrace.exclude_from_grouping": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "service.name": [
+      "first-service"
+    ],
+    "span.stacktrace.filename": [
+      "AhcEventFilter.java",
+      "HttpCodecFilter.java",
+      "HttpCodecFilter.java",
+      "HttpClientFilter.java",
+      "ExecutorResolver.java",
+      "DefaultFilterChain.java",
+      "DefaultFilterChain.java",
+      "DefaultFilterChain.java",
+      "DefaultFilterChain.java",
+      "ProcessorExecutor.java",
+      "TCPNIOTransport.java",
+      "AbstractIOStrategy.java",
+      "WorkerThreadIOStrategy.java",
+      "WorkerThreadIOStrategy.java",
+      "WorkerThreadIOStrategy.java"
+    ],
+    "processor.name": [
+      "transaction"
+    ],
+    "span.stacktrace.function": [
+      "onHttpPacketParsed",
+      "decodeWithTransferEncoding",
+      "handleRead",
+      "handleRead",
+      "execute",
+      "executeFilter",
+      "executeChainPart",
+      "execute",
+      "process",
+      "execute",
+      "fireIOEvent",
+      "fireIOEvent",
+      "run0",
+      "access$100",
+      "run"
+    ],
+    "span.id": [
+      "a97eae7cb297f77b"
+    ],
+    "span.subtype": [
+      "http"
+    ],
+    "observer.version_major": [
+      7
+    ],
+    "span.stacktrace.library_frame": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "span.stacktrace.module": [
+      "com.ning.http.client.providers.grizzly",
+      "org.glassfish.grizzly.http",
+      "org.glassfish.grizzly.http",
+      "org.glassfish.grizzly.http",
+      "org.glassfish.grizzly.filterchain",
+      "org.glassfish.grizzly.filterchain",
+      "org.glassfish.grizzly.filterchain",
+      "org.glassfish.grizzly.filterchain",
+      "org.glassfish.grizzly.filterchain",
+      "org.glassfish.grizzly",
+      "org.glassfish.grizzly.nio.transport",
+      "org.glassfish.grizzly.strategies",
+      "org.glassfish.grizzly.strategies",
+      "org.glassfish.grizzly.strategies",
+      "org.glassfish.grizzly.strategies"
+    ],
+    "observer.hostname": [
+      "57bfb6cfd34b"
+    ],
+    "span.type": [
+      "external"
+    ],
+    "tags": [
+      "_geoip_expired_database"
+    ],
+    "observer.id": [
+      "fcdcf5b3-ae51-4a7a-b3d9-7a1ed340fa95"
+    ],
+    "timestamp.us": [
+      1698234345666543
+    ],
+    "@timestamp": [
+      "2023-10-25T11:45:45.666Z"
+    ],
+    "observer.ephemeral_id": [
+      "63b239c7-1604-4c61-a6ea-16fb84411491"
+    ],
+    "ecs.version": [
+      "1.12.0"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "observer.version": [
+      "7.17.13"
+    ],
+    "agent.ephemeral_id": [
+      "db5457c8-a643-491d-bb1f-9c96e08f2773"
+    ],
+    "agent.version": [
+      "1.43.0"
+    ],
+    "parent.id": [
+      "c1809f3a588df903"
+    ],
+    "span.destination.service.resource": [
+      "http"
+    ]
+  }
+}
