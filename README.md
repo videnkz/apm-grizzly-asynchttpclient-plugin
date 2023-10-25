@@ -8,7 +8,7 @@ Links to library below:
 ## Supported versions
 | Plugin | Elastic APM Agent | Grizzly AsyncHttpClient |
 |:-------|:------------------|:------------------------|
-| 0.1+   | 1.43.0+           | 1.12+                   |
+| 0.1+   | 1.43.0+           | 1.9+                    |
 
 ## Installation
 Set the [`plugins_dir`](https://www.elastic.co/guide/en/apm/agent/java/current/config-core.html#config-plugins-dir) agent configuration option and copy the plugin to specified directory.
