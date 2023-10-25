@@ -17,11 +17,17 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
+import static co.elastic.apm.agent.sdk.bytebuddy.CustomElementMatchers.classLoaderCanLoadClass;
 import static net.bytebuddy.implementation.bytecode.assign.Assigner.Typing.DYNAMIC;
 import static net.bytebuddy.matcher.ElementMatchers.named;
 import static net.bytebuddy.matcher.ElementMatchers.takesArgument;
 
 public class GrizzlyAsyncHttpClientInstrumentation extends ElasticApmInstrumentation {
+    @Override
+    public ElementMatcher.Junction<ClassLoader> getClassLoaderMatcher() {
+        return classLoaderCanLoadClass("com.ning.http.client.uri.Uri");
+    }
+
     @Override
     public ElementMatcher<? super TypeDescription> getTypeMatcher() {
         return named("com.ning.http.client.AsyncHttpClient");
